@@ -1,0 +1,11 @@
+{
+    "name": "badta5te/brain-games",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pavel",
+            "email": "mikhailov.sztu@gmail.com"
+        }
+    ],
+    "require": {}
+}
