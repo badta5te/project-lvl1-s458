@@ -1,5 +1,8 @@
 {
     "name": "badta5te/brain-games",
+    "bin": [
+        "bin/brain-games"
+      ],
     "type": "library",
     "authors": [
         {

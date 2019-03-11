@@ -11,4 +11,3 @@ if (file_exists($autoloadPath1)) {
 }
 
 echo 'Welcome to the Brain Games!';
-
