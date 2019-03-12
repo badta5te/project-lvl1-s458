@@ -9,7 +9,8 @@
     ],
     "bin":[
 		"bin/brain-games", 
-		"bin/brain-even"
+		"bin/brain-even",
+		"bin/brain-calc"
     ],
     "type":"project",
     "authors":[
@@ -27,7 +28,8 @@
     "autoload":{
         "files":[
 			"src/Cli.php",
-			"src/brain-even.php"
+			"src/games/brain-even.php",
+			"src/games/brain-calc.php"
         ]
     },
     "scripts":{

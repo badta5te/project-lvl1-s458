@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 
 const GREETING = "Welcome to the Brain Game!";
-const GAME_RULES = "Answer 'yes' if number even otherwise answer 'no'.\n";
+const GAME_RULES = "What is the result of the expression?";
 const COUNT_OF_ROUNDS = 3;
 const OPERATORS = ['+', '-', '*'];
 
@@ -25,15 +25,15 @@ function game()
         $operator = OPERATORS[array_rand(OPERATORS)];
         $question = "{$firstNumber} {$operator} {$secondNumber}";
         line('Question: %s', $question);
-        $answer = prompt('Your answer:');
+        $playerAnswer = prompt('Your answer:');
         if ($operator === '+') {
-            $correctAnswer = $firstNumber + $secondNumber;
+            $answer = $firstNumber + $secondNumber;
         } elseif ($operator === '-') {
-            $correctAnswer = $firstNumber - $secondNumber;
+            $answer = $firstNumber - $secondNumber;
         } else {
-            $correctAnswer = $firstNumber * $secondNumber;
+            $answer = $firstNumber * $secondNumber;
         }
-        if ($correctAnswer == $answer) {
+        if ($answer == $playerAnswer) {
             line('Correct!');
             $gamesPlayed++;
         } else {
@@ -43,7 +43,7 @@ function game()
     if ($gamesPlayed === 3) {
         line('Congratulations, %s!', $name);
     } else {
-        line("'%s', is wrong answer ;(. Correct answer was '%s'\n", $answer, $correctAnswer);
+        line("'%s', is wrong answer ;(. Correct answer was '%s'\n", $playerAnswer, $answer);
         line("Let's try again, %s!", $name);
     }
 }
