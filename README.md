@@ -8,6 +8,12 @@ A set of mini-games that run from the command line.
 
 ## asciinema's
 
+### brain-gcd
+[![asciicast](https://asciinema.org/a/LolTl7FDruTtWXl16kAzkyEhs.svg)](https://asciinema.org/a/LolTl7FDruTtWXl16kAzkyEhs)
+
+### brain-calc
+[![asciicast](https://asciinema.org/a/BA1VUeJjfcNckwq8iSh9ikjG4.svg)](https://asciinema.org/a/BA1VUeJjfcNckwq8iSh9ikjG4)
+
 ### brain-even
 [![asciicast](https://asciinema.org/a/Na6DfirQEBfjOOY5ZhhX0pUn5.svg)](https://asciinema.org/a/Na6DfirQEBfjOOY5ZhhX0pUn5)
 
