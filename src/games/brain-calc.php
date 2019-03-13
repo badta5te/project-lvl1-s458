@@ -6,20 +6,18 @@ use function cli\line;
 use function cli\prompt;
 
 const GREETING = "Welcome to the Brain Game!";
-const GAME_RULES = "What is the result of the expression?";
-const COUNT_OF_ROUNDS = 3;
+const DESCRIPTION = "What is the result of the expression?";
+const ROUNDS = 3;
 const OPERATORS = ['+', '-', '*'];
 
 function game()
 {
     line(GREETING);
-    line(GAME_RULES);
+    line(DESCRIPTION);
     $name = prompt('May I have your name?');
     line('Hello, %s!', $name);
 
-    $gamesPlayed = 0;
-
-    for ($i = 1; $i <= COUNT_OF_ROUNDS; $i++) {
+    for ($i = 0; $i < ROUNDS; $i++) {
         $firstNumber = rand(1, 100);
         $secondNumber = rand(1, 100);
         $operator = OPERATORS[array_rand(OPERATORS)];
@@ -27,23 +25,18 @@ function game()
         line('Question: %s', $question);
         $playerAnswer = prompt('Your answer:');
         if ($operator === '+') {
-            $answer = $firstNumber + $secondNumber;
+            $correctAnswer = $firstNumber + $secondNumber;
         } elseif ($operator === '-') {
-            $answer = $firstNumber - $secondNumber;
+            $correctAnswer = $firstNumber - $secondNumber;
         } else {
-            $answer = $firstNumber * $secondNumber;
+            $correctAnswer = $firstNumber * $secondNumber;
         }
-        if ($answer == $playerAnswer) {
+        if ($correctAnswer == $playerAnswer) {
             line('Correct!');
-            $gamesPlayed++;
         } else {
-            break;
+            line("'%s', is wrong answer ;(. Correct answer was '%s'", $playerAnswer, $correctAnswer);
+            return line("Let's try again, %s!", $name);
         }
     }
-    if ($gamesPlayed === 3) {
-        line('Congratulations, %s!', $name);
-    } else {
-        line("'%s', is wrong answer ;(. Correct answer was '%s'\n", $playerAnswer, $answer);
-        line("Let's try again, %s!", $name);
-    }
+    line('Congratulations, %s!', $name);
 }
