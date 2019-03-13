@@ -16,14 +16,15 @@ function startGame($data, $description)
 
     for ($i = 0; $i < ROUNDS; $i++) {
         $getData = $data();
-        $correctAnswer = $getData['correctAnswer'];
-        line('Question: %s', $getData['question']);
+        ['question' => $question, 'correctAnswer' => $correctAnswer] = $getData;
+        line('Question: %s', $question);
         $playerAnswer = prompt('Your answer');
         if ($playerAnswer == $correctAnswer) {
             line('Correct!');
         } else {
-            return line("'%s', is wrong answer ;(. Correct answer was '%s'" . PHP_EOL .
-            "Let's try again, %s!", $playerAnswer, $correctAnswer, $name);
+            line("'{$playerAnswer}', is wrong answer ;(. Correct answer was '{$correctAnswer}'");
+            line("Let's try again, {$name}!");
+            exit;
         }
     }
     line('Congratulations, %s!', $name);

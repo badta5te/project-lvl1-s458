@@ -9,19 +9,18 @@ use function cli\prompt;
 
 const DESCRIPTION = "Answer 'yes' if number even otherwise answer 'no'.\n";
 
-function isEven(int $question): bool
+function isEven(int $number): bool
 {
-    return $question % 2 === 0;
+    return $number % 2 === 0;
 }
 
 function game()
 {
-
     $data = function () {
-        $question = rand(1, 100);
-        $correctAnswer = isEven($question) ? 'yes' : 'no';
+        $number = rand(1, 100);
+        $correctAnswer = isEven($number) ? 'yes' : 'no';
         return [
-            'question' => $question,
+            'question' => $number,
             'correctAnswer' => $correctAnswer
         ];
     };

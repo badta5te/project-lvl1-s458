@@ -30,7 +30,8 @@
             "src/Cli.php",
             "src/GameEngine.php",
 			"src/games/brain-even.php",
-			"src/games/brain-calc.php"
+            "src/games/brain-calc.php",
+            "src/games/brain-gcd.php"
         ]
     },
     "scripts":{

@@ -4,7 +4,7 @@ namespace BrainGames\BrainCalc;
 
 use function BrainGames\GameEngine\startGame;
 
-const DESCRIPTION = "What is the result of the expression?";
+const DESCRIPTION = "What is the result of the expression?\n";
 const OPERATORS = ['+', '-', '*'];
 
 function game()
@@ -15,17 +15,21 @@ function game()
         $operator = OPERATORS[array_rand(OPERATORS)];
         $question = "{$firstNumber} {$operator} {$secondNumber}";
 
-        $calculate = function ($firstNumber, $secondNumber, $operator) {
-            if ($operator === '+') {
-                return $firstNumber + $secondNumber;
-            } elseif ($operator === '-') {
-                return $firstNumber - $secondNumber;
-            } else {
-                return $firstNumber * $secondNumber;
+        $getCorrectAnswer = function ($firstNumber, $secondNumber, $operator) {
+            switch ($operator) {
+                case '+':
+                    return $firstNumber + $secondNumber;
+                    break;
+                case '-':
+                    return $firstNumber - $secondNumber;
+                    break;
+                case '*':
+                    return $firstNumber * $secondNumber;
+                    break;
             }
         };
 
-        $correctAnswer = $calculate($firstNumber, $secondNumber, $operator);
+        $correctAnswer = $getCorrectAnswer($firstNumber, $secondNumber, $operator);
         return [
             'question' => $question,
             'correctAnswer' => $correctAnswer
