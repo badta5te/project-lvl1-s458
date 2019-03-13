@@ -8,8 +8,8 @@
         "hexlet"
     ],
     "bin":[
-		"bin/brain-games", 
-		"bin/brain-even",
+        "bin/brain-games", 
+        "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd"
     ],
@@ -30,7 +30,7 @@
         "files":[
             "src/Cli.php",
             "src/GameEngine.php",
-			"src/games/brain-even.php",
+            "src/games/brain-even.php",
             "src/games/brain-calc.php",
             "src/games/brain-gcd.php"
         ]
