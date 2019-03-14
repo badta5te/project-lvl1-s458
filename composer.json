@@ -30,9 +30,9 @@
         "files":[
             "src/Cli.php",
             "src/GameEngine.php",
-            "src/games/brain-even.php",
-            "src/games/brain-calc.php",
-            "src/games/brain-gcd.php"
+            "src/games/even.php",
+            "src/games/calc.php",
+            "src/games/gcd.php"
         ]
     },
     "scripts":{

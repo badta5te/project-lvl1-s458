@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\BrainCalc;
+namespace BrainGames\Calc;
 
 use function BrainGames\GameEngine\startGame;
 
@@ -30,10 +30,7 @@ function game()
         };
 
         $correctAnswer = $getCorrectAnswer($firstNumber, $secondNumber, $operator);
-        return [
-            'question' => $question,
-            'correctAnswer' => $correctAnswer
-        ];
+        return [$question, $correctAnswer];
     };
     startGame($data, DESCRIPTION);
 }
