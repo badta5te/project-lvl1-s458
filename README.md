@@ -8,6 +8,9 @@ A set of mini-games that run from the command line.
 
 ## asciinema's
 
+### brain-prime
+[![asciicast](https://asciinema.org/a/V84XW9XhHQmlM2boVt2KCwahD.svg)](https://asciinema.org/a/V84XW9XhHQmlM2boVt2KCwahD)
+
 ### brain-progression
 [![asciicast](https://asciinema.org/a/Jzt0QcaMH42ExSnH97EFsmqZB.svg)](https://asciinema.org/a/Jzt0QcaMH42ExSnH97EFsmqZB)
 
