@@ -13,7 +13,7 @@
         "bin/brain-calc",
         "bin/brain-gcd",
         "bin/brain-progression",
-        "bin/prime"
+        "bin/brain-prime"
     ],
     "type":"project",
     "authors":[
