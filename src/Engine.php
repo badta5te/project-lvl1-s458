@@ -9,7 +9,6 @@ const ROUNDS = 3;
 
 function startGame($getData, $description)
 {
-    line('Welcome to the Brain Game!');
     line("{$description}\n");
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);

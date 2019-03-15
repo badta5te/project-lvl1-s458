@@ -22,7 +22,9 @@ function menu()
         'quit' => 'Quit',
     ];
 
-    $choice = cliMenu($menu, null, 'Choose the game');
+    line('Welcome to the Brain Game!');
+    line();
+    $choice = cliMenu($menu, null, 'Select a game number');
     line();
     switch ($choice) {
         case 'BrainGames\Even':
