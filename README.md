@@ -6,22 +6,18 @@ A set of mini-games that run from the command line.
 [![Maintainability](https://api.codeclimate.com/v1/badges/683d157128ca62608856/maintainability)](https://codeclimate.com/github/badta5te/project-lvl1-s458/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/683d157128ca62608856/test_coverage)](https://codeclimate.com/github/badta5te/project-lvl1-s458/test_coverage)
 
-## asciinema's
+## Installation
+---
+Via Composer
 
-### brain-prime
-[![asciicast](https://asciinema.org/a/V84XW9XhHQmlM2boVt2KCwahD.svg)](https://asciinema.org/a/V84XW9XhHQmlM2boVt2KCwahD)
+`$ composer global require badta5te/brain-games:dev-master`
 
-### brain-progression
-[![asciicast](https://asciinema.org/a/Jzt0QcaMH42ExSnH97EFsmqZB.svg)](https://asciinema.org/a/Jzt0QcaMH42ExSnH97EFsmqZB)
+## Usage
+---
+To start the game, run:
 
-### brain-gcd
-[![asciicast](https://asciinema.org/a/LolTl7FDruTtWXl16kAzkyEhs.svg)](https://asciinema.org/a/LolTl7FDruTtWXl16kAzkyEhs)
-
-### brain-calc
-[![asciicast](https://asciinema.org/a/BA1VUeJjfcNckwq8iSh9ikjG4.svg)](https://asciinema.org/a/BA1VUeJjfcNckwq8iSh9ikjG4)
-
-### brain-even
-[![asciicast](https://asciinema.org/a/Na6DfirQEBfjOOY5ZhhX0pUn5.svg)](https://asciinema.org/a/Na6DfirQEBfjOOY5ZhhX0pUn5)
-
-### brain-games
-[![asciicast](https://asciinema.org/a/kvzDTBOkmErxqdK5dgwTJC05e.svg)](https://asciinema.org/a/kvzDTBOkmErxqdK5dgwTJC05e)
+* $ [brain-even](https://asciinema.org/a/kvzDTBOkmErxqdK5dgwTJC05e)
+* $ [brain-calc](https://asciinema.org/a/Na6DfirQEBfjOOY5ZhhX0pUn5)
+* $ [brain-gcd](https://asciinema.org/a/BA1VUeJjfcNckwq8iSh9ikjG4)
+* $ [brain-progression](https://asciinema.org/a/LolTl7FDruTtWXl16kAzkyEhs)
+* $ [brain-prime](https://asciinema.org/a/Jzt0QcaMH42ExSnH97EFsmqZB)
