@@ -4,7 +4,7 @@ namespace BrainGames\Progression;
 
 use function BrainGames\Engine\startGame;
 
-const DESCRIPTION = "What number is missing in the progression?\n";
+const DESCRIPTION = "What number is missing in the progression?";
 const SIZE_OF_PROGRESSION = 10;
 
 function game()
@@ -17,8 +17,8 @@ function game()
         for ($i = 1; $i <= SIZE_OF_PROGRESSION; $i++) {
             $progression[] = $begin + $step * ($i - 1);
         }
-        $correctAnswer = $progression[$hiddenElement];
-        $progression[$hiddenElement] = '..';
+        $correctAnswer = $progression[$positionOfHiddenElement];
+        $progression[$positionOfHiddenElement] = '..';
         $question = implode(' ', $progression);
         return [$question, $correctAnswer];
     };
