@@ -9,7 +9,7 @@ const SIZE_OF_PROGRESSION = 10;
 
 function game()
 {
-    $data = function () {
+    $getData = function () {
         $begin = rand(1, 5);
         $step = rand(1, 5);
         $positionOfHiddenElement = rand(0, SIZE_OF_PROGRESSION - 1);
@@ -22,5 +22,5 @@ function game()
         $question = implode(' ', $progression);
         return [$question, $correctAnswer];
     };
-    startGame($data, DESCRIPTION);
+    startGame($getData, DESCRIPTION);
 }

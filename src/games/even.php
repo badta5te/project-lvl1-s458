@@ -13,10 +13,10 @@ function isEven(int $number): bool
 
 function game()
 {
-    $data = function () {
+    $getData = function () {
         $question = rand(1, 100);
         $correctAnswer = isEven($question) ? 'yes' : 'no';
         return [$question, $correctAnswer];
     };
-    startGame($data, DESCRIPTION);
+    startGame($getData, DESCRIPTION);
 }
