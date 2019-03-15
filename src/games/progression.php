@@ -14,10 +14,8 @@ function game()
         $step = rand(1, 5);
         $positionOfHiddenElement = rand(0, SIZE_OF_PROGRESSION - 1);
         $progression = [];
-        $currentElement = $beginOfProgression;
-        for ($i = 0; $i < SIZE_OF_PROGRESSION; $i++) {
-            $progression[] = $currentElement;
-            $currentElement += $stepOfProgression;
+        for ($i = 1; $i <= SIZE_OF_PROGRESSION; $i++) {
+            $progression[] = $begin + $step * ($i - 1);
         }
         $correctAnswer = $progression[$hiddenElement];
         $progression[$hiddenElement] = '..';

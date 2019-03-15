@@ -15,8 +15,7 @@ function startGame($data, $description)
     line("Hello, %s!", $name);
 
     for ($i = 0; $i < ROUNDS; $i++) {
-        $getData = $data();
-        [$question, $correctAnswer] = $getData;
+        [$question, $correctAnswer] = $data();
         line('Question: %s', $question);
         $playerAnswer = prompt('Your answer');
         if ($playerAnswer == $correctAnswer) {
