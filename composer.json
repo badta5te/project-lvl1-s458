@@ -30,7 +30,7 @@
     },
     "autoload":{
         "files":[
-            "src/Cli.php",
+            "src/Menu.php",
             "src/Engine.php",
             "src/games/even.php",
             "src/games/calc.php",
