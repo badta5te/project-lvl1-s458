@@ -4,6 +4,7 @@ namespace BrainGames\Engine;
 
 use function cli\line;
 use function cli\prompt;
+use function BrainGames\Menu\menu;
 
 const ROUNDS = 3;
 
@@ -26,4 +27,7 @@ function startGame($getData, $description)
         }
     }
     line('Congratulations, %s!', $name);
+    line();
+
+    return menu();
 }
