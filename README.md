@@ -14,6 +14,7 @@ Via Composer
 ## Usage
 To start the game, run:
 
+* $ [brain-games](https://asciinema.org/a/rHOj9ATxhLraBjM9OUngUAtc5)
 * $ [brain-even](https://asciinema.org/a/kvzDTBOkmErxqdK5dgwTJC05e)
 * $ [brain-calc](https://asciinema.org/a/Na6DfirQEBfjOOY5ZhhX0pUn5)
 * $ [brain-gcd](https://asciinema.org/a/BA1VUeJjfcNckwq8iSh9ikjG4)
