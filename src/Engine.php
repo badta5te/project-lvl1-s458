@@ -23,7 +23,7 @@ function startGame($getData, $description)
         } else {
             line("'{$playerAnswer}', is wrong answer ;(. Correct answer was '{$correctAnswer}'");
             line("Let's try again, {$name}!");
-            exit;
+            return menu();
         }
     }
     line('Congratulations, %s!', $name);
